@@ -1,10 +1,24 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Simula um atraso de 2 segundos (2000 milissegundos) para a splash screen
-    setTimeout(function() {
-        // Oculta a splash screen
-        document.getElementById("splashScreen").style.display = "none";
+gsap.fromTo(
+  ".loading-page",
+  { opacity: 1 },
+  {
+    opacity: 0,
+    display: "none",
+    duration: 1.5,
+    delay: 3.5,
+  }
+);
 
-        // Exibe o conteúdo do site
-        document.getElementById("content").style.display = "block";
-    }, 2000);
-});
+gsap.fromTo(
+  ".logo-name",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.5,
+  }
+);
