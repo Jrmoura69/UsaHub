@@ -32,8 +32,6 @@ a {
   text-decoration: none;
 }
 .nav .logo {
-  display: flex;
-  align-items: center;
   font-size: 22px;
   font-weight: 500;
 }
